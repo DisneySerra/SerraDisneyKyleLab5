@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = null, chooser = null;
         if (v.getId()==R.id.btnMap){
             i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("geo://14.586931, 120.981243"));
+            i.setData(Uri.parse("geo://14.586931, 120.981243?q=14.586931, 120.981243(National+Museum)"));
             chooser = Intent.createChooser(i,"Select your preference");
             startActivity(chooser);
         }

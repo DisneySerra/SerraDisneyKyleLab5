@@ -58,7 +58,7 @@ public class SecondActivity extends AppCompatActivity {
         Intent i = null, chooser = null;
         if (v.getId() == R.id.btnMap2) {
             i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("geo://14.5946574, 120.9683095"));
+            i.setData(Uri.parse("geo://14.5946574, 120.9683095?q=14.5946574, 120.9683095(Walk+This+Way)"));
             chooser = Intent.createChooser(i, "Select your preference");
             startActivity(chooser);
         }
